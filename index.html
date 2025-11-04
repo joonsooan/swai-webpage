@@ -18,17 +18,6 @@
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
-  <style>
-    input,
-    textarea,
-    button {
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      font-size: 16px;
-      color: #333;
-    }
-  </style>
   <body class="d-flex flex-column h-100">
     <main class="flex-shrink-0">
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -59,30 +48,30 @@
           <div class="row gx-5 align-items-center justify-content-center">
             <div class="col-lg-8 col-xl-7 col-xxl-6">
               <div class="my-5 text-center text-xl-start">
-                <h1 class="display-5 fw-bolder text-white mb-2">
-                  게임 한 줄 소개
-                </h1>
+                <h1 class="display-5 fw-bolder text-white mb-2">Asterisk</h1>
                 <p class="lead fw-normal text-white-50 mb-4">
-                  A Simulation Rougelike Game about
+                  기지 건설과 해체를 반복하며 진행되는 우주 배경 시뮬레이션
+                  로그라이크 게임
                 </p>
                 <div
                   class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start"
                 >
                   <a
-                    class="btn btn-primary btn-lg px-4 me-sm-3"
+                    class="btn btn-outline-light btn-lg px-4 me-sm-3"
                     href="#features"
                     >Get Started</a
                   >
-                  <!-- <a class="btn btn-outline-light btn-lg px-4" href="#!"
-                    >Learn More</a
-                  > -->
+
+                  <a class="btn btn-lg px-4 btn-rainbow" href="#!"
+                    >Steam Page</a
+                  >
                 </div>
               </div>
             </div>
             <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center">
               <img
                 class="img-fluid rounded-3 my-5"
-                src="https://dummyimage.com/600x400/343a40/6c757d"
+                src="assets/title.png"
                 alt="..."
               />
             </div>
@@ -93,7 +82,15 @@
         <div class="container px-5 my-5">
           <div class="row gx-5">
             <div class="col-lg-4 mb-5 mb-lg-0">
-              <h2 class="fw-bolder mb-0">A better way to start building.</h2>
+              <h2 class="fw-bolder">About the game</h2>
+              <img
+                src="assets/image.png"
+                class="img-fluid rounded-3 mt-5 mb-3 shadow-lg"
+                style="max-width: 100%; height: auto; object-fit: cover"
+              />
+              <p class="small text-muted fst-italic mt-1 text-center">
+                인게임 화면
+              </p>
             </div>
             <div class="col-lg-8">
               <div class="row gx-5 row-cols-1 row-cols-md-2">
@@ -103,10 +100,11 @@
                   >
                     <i class="bi bi-collection"></i>
                   </div>
-                  <h2 class="h5">Featured title</h2>
+                  <h2 class="h5"><b>로그라이크와 시뮬레이션의 결합</b></h2>
                   <p class="mb-0">
-                    Paragraph of text beneath the heading to explain the
-                    heading. Here is just a bit more text.
+                    시뮬레이션 장르에 로그라이크 장르의 핵심 시스템을 융합하여,
+                    고정된 공략이 아닌 주어진 상황에 맞춰 끊임없이 새로운 생존
+                    전략을 구상
                   </p>
                 </div>
                 <div class="col mb-5 h-100">
@@ -115,10 +113,10 @@
                   >
                     <i class="bi bi-building"></i>
                   </div>
-                  <h2 class="h5">Featured title</h2>
+                  <h2 class="h5"><b>'조합'과 '분해'를 통한 기지 건설</b></h2>
                   <p class="mb-0">
-                    Paragraph of text beneath the heading to explain the
-                    heading. Here is just a bit more text.
+                    단순히 건물을 짓고 파괴하는 것이 아닌, 기존 건물을 합치고
+                    분해하며 기지를 성장시키는 독특한 재미
                   </p>
                 </div>
                 <div class="col mb-5 mb-md-0 h-100">
@@ -127,10 +125,12 @@
                   >
                     <i class="bi bi-toggles2"></i>
                   </div>
-                  <h2 class="h5">Featured title</h2>
+                  <h2 class="h5"><b>간접 조작을 통한 '최적화'</b></h2>
                   <p class="mb-0">
-                    Paragraph of text beneath the heading to explain the
-                    heading. Here is just a bit more text.
+                    플레이어는 게임 내 유닛을 직접 조종할 수 없지만, 적절한
+                    위치에 건물을 배치하거나 채굴할 자원을 지정해주는 등
+                    간접적으로 유닛을 조작하고, 최종적으로 복잡한 생산 라인을
+                    효율적으로 구축
                   </p>
                 </div>
                 <div class="col h-100">
@@ -139,10 +139,12 @@
                   >
                     <i class="bi bi-toggles2"></i>
                   </div>
-                  <h2 class="h5">Featured title</h2>
+                  <h2 class="h5"><b>멸망한 문명을 재건하기 위한 여정</b></h2>
                   <p class="mb-0">
-                    Paragraph of text beneath the heading to explain the
-                    heading. Here is just a bit more text.
+                    단순히 오래 생존하거나 무한히 확장하는 것이 아닌, '시드
+                    코어'를 가동해 모선으로 복귀하는 것이 목표. 모선을 강화하고
+                    더 많은 행성을 탐사하며 문명의 몰락에 얽힌 비밀을
+                    풀어나갑니다
                   </p>
                 </div>
               </div>
@@ -150,53 +152,130 @@
           </div>
         </div>
       </section>
-      <div class="py-5 bg-light">
-        <div class="container px-5 my-5">
+
+      <section class="py-5 bg-light">
+        <div class="container px-5 mb-5">
           <div class="row gx-5 justify-content-center">
-            <div class="col-lg-10 col-xl-7">
-              <div class="text-center">
-                <div class="fs-4 mb-4 fst-italic">
-                  "Working with Start Bootstrap templates has saved me tons of
-                  development time when building new projects! Starting with a
-                  Bootstrap template just makes things easier!"
-                </div>
-                <div class="d-flex align-items-center justify-content-center">
-                  <img
-                    class="rounded-circle me-3"
-                    src="https://dummyimage.com/40x40/ced4da/6c757d"
-                    alt="..."
-                  />
-                  <div class="fw-bold">
-                    Tom Ato
-                    <span class="fw-bold text-primary mx-1">/</span>
-                    CEO, Pomodoro
-                  </div>
-                </div>
+            <div class="col-lg-10 col-xl-8">
+              <div class="">
+                <h3 class="fw-bolder mb-4 text-center">게임 소개</h3>
+                <p class="fw-normal text-muted mb-3 text-center">
+                  한때 은하계를 호령했던 초고도 문명 '선조'는 원인 모를 대정화
+                  현상으로 모든 것이 소멸해 멸망해버렸습니다. 선조들은 최후의
+                  순간 직전, 자신들의 기술과 정보가 담긴 탈출용 함선을 우주
+                  저편으로 급하게 쏘아 올렸죠.
+                </p>
+                <p class="fw-normal text-muted mb-3 text-center">
+                  안타깝게도 이 마지막 함선에 생명체를 태울 시간은 없었습니다.
+                  오직, 이 모든 것을 책임지고 관리하는 당신, 관리자격 의식체만이
+                  끝없는 어둠 속으로 항해를 시작했습니다.
+                </p>
+                <p class="fw-normal text-muted mb-3 text-center">
+                  당신은 마침내 대정화 현상의 근원에 대한 실마리를 포착했고, 그
+                  실마리는 당신을 한 미지의 행성으로 이끌었습니다.
+                </p>
+                <p class="fw-normal text-muted mb-5 text-center">
+                  행성 표면의 주요 지점에 탐사 캡슐을 투하하여 전략적인 기지를
+                  건설하고, 문명 재건에 필요한 자원을 확보하십시오. 선조들의
+                  기술을 연구하며 기지를 확장하고 행성에 숨겨진 비밀들을
+                  발견하세요!
+                </p>
+                <h3 class="fw-bolder mb-5 text-center">개발팀의 이야기</h3>
+                <h5 class="fw-bolder mb-3">Q. Asterisk를 개발하게 된 계기</h4>
+                <p class="fw-normal mb-2">
+                  저희는 기존 명작 시뮬레이션 게임(림월드, Factorio 등)과 로그라이크 게임(슬레이 더 스파이어, 발라트로 등)들을 플레이하며 해당 장르에 빠지게 되었습니다.
+                </p>
+                <p class="fw-normal mb-2">
+                  하지만 늘 기존 게임들이 가진 아쉬운 점, 예를 들어 '전략의 깊이는 있지만 매번 똑같은 빌드를 사용해야 한다'는 점에 아쉬움을 느꼈고, 
+                  사람들이 시뮬레이션 장르에 관심을 가져도 높은 진입장벽으로 인해 쉽게 입문하지 못한다는 것을 깨달았습니다.
+                </p>
+                <p class="fw-normal mb-2">
+                  또한 로그라이크 게임의 경우 매번 바뀌는 랜덤성으로 인해 새로운 플레이 경험을 느끼게 되지만, 
+                  '영구적 죽음'이라는 요소로 인해 그동안 쌓아온 것이 무너지는 순간 큰 좌절을 겪게 되죠.
+                </p>
+                <p class="fw-normal mb-5">
+                  이런 게이머들의 고민을 해결하고자 '시뮬레이션과 로그라이크 장르의 장점을 가져와보면 어떨까?' 라는 생각을 하게 되었고, 
+                  여기에서 Asterisk가 탄생하게 되었습니다.
+                </p>
+                <h5 class="fw-bolder mb-3">Q. 게임의 주 타겟층</h4>
+                <p class="fw-normal mb-2">
+                  이런 플레이어에게 추천합니다!
+                </p>
+                <li class="fw-normal mb-2">
+                  최적의 생산 라인과 효율을 고민하는 것을 즐기는 분
+                </li>
+                <li class="fw-normal mb-2">
+                  매번 다른 위기 상황에 맞춰 새로운 전략을 짜는 것을 좋아하는 분
+                </li>
+                <li class="fw-normal mb-2">
+                  단순히 기지를 짓는 것을 넘어, 명확한 '탈출' 또는 '클리어' 목표가 있는 시뮬레이션을 선호하는 분
+                </li>
+                <li class="fw-normal mb-5">
+                  SF 우주 배경의 미스터리한 게임을 좋아하시는 분
+                </li>
+                <h5 class="fw-bolder mb-3">Q. 개발 계획 및 로드맵</h4>
+                <li class="fw-normal mb-2">
+                  2025년 4분기 : 1차 데모 버전 개발
+                </li>
+                <li class="fw-normal mb-2">
+                  2026년 상반기 : 스팀 페이지 개설, 스팀 데모 출시
+                </li>
+                <li class="fw-normal mb-2">
+                  2026년 하반기 : 스팀 정식 버전 출시
+                </li>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
+
+      <section class="py-2 bg-light">
+        <div class="container px-5 mb-5">
+          <div class="row gx-5 justify-content-center">
+            <div class="col-lg-8 col-xl-6 text-center">
+              <h3 class="fw-bolder">소식 받기</h3>
+              <p class="lead fw-normal text-muted my-3 mb-2">
+                Asterisk의 개발 여정에 함께하세요!
+              </p>
+              <p class="lead fw-normal text-muted my-0 mb-4">
+                데모 버전을 가장 빠르게 받고 싶다면 이메일을 등록해주세요
+              </p>
+
+              <div class="form-floating mb-3">
+                <input
+                  class="form-control"
+                  id="submit-email"
+                  type="email"
+                  placeholder="알림을 받으실 이메일"
+                />
+                <label for="submit-email">알림을 받으실 이메일</label>
+              </div>
+              <div class="form-floating mb-3">
+                <textarea
+                  class="form-control"
+                  id="submit-advice"
+                  name="Text1"
+                  placeholder="서비스에 대한 조언을 남겨주세요"
+                  style="height: 10rem"
+                ></textarea>
+                <label for="submit-advice"
+                  >게임에 대한 피드백을 남겨주세요</label
+                >
+              </div>
+              <div class="d-grid">
+                <button
+                  class="btn btn-primary btn-lg"
+                  id="submit"
+                  type="button"
+                >
+                  지금 제출!
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <center>
-      <p>이메일을 남겨주시면 서비스가 런칭되었을 때 알림을 드리겠습니다.</p>
-      <input
-        id="submit-email"
-        type="email"
-        placeholder="알림을 받으실 이메일"
-      />
-      <br /><br />
-      <p>서비스가 이렇게 되었으면 좋겠다는 조언을 해 주세요</p>
-      <textarea
-        id="submit-advice"
-        name="Text1"
-        cols="40"
-        rows="5"
-        placeholder="서비스에 대한 조언을 남겨주세요"
-      ></textarea
-      ><br />
-      <button style="width: 350px" id="submit">지금 제출!</button>
-    </center>
     <footer class="bg-dark py-4 mt-auto">
       <div class="container px-5">
         <div
@@ -205,13 +284,7 @@
           <div class="col-auto">
             <div class="small m-0 text-white">Copyright &copy; Asterisk</div>
           </div>
-          <div class="col-auto">
-            <!-- <a class="link-light small" href="#!">Privacy</a>
-            <span class="text-white mx-1">&middot;</span>
-            <a class="link-light small" href="#!">Terms</a>
-            <span class="text-white mx-1">&middot;</span>
-            <a class="link-light small" href="#!">Contact</a> -->
-          </div>
+          <div class="col-auto"></div>
         </div>
       </div>
     </footer>
@@ -393,19 +466,6 @@
           console.log(error.config);
         });
     </script>
-    <!-- <center>
-      <iframe
-        type="text/html"
-        width="315"
-        height="560"
-        src="https://www.youtube.com/embed/QHgyX24kOSE?autoplay=1"
-        title="대한민국 대학생들이 만든 레전드 광고 ㅋㅋㅋ"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen
-      ></iframe>
-    </center> -->
     <div id="popup" style="display: none">
       <h1>감사합니다.</h1>
       <p>이제는 우리는 같은 배를 탔습니다.</p>
