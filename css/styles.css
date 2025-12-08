@@ -11203,3 +11203,64 @@ html {
   opacity: 0.85;
   color: white; /* 호버 시에도 텍스트 색상 유지 */
 }
+
+.ai-card {
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1); /* 부드러운 그림자 */
+  background: #ffffff;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.ai-card:hover {
+  transform: translateY(-5px); /* 마우스 올리면 살짝 떠오름 */
+}
+
+/* 상단 장식용 그라데이션 바 */
+.ai-card-deco-bar {
+  height: 6px;
+  background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+  width: 100%;
+}
+
+/* 요약 텍스트 박스 */
+.ai-summary-box {
+  background-color: #f8f9fa;
+  border-left: 5px solid #2575fc; /* 왼쪽 파란 포인트 */
+  padding: 20px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #444;
+  text-align: left;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.02);
+}
+
+/* 키워드 칩 (배지) 디자인 */
+.keyword-chip {
+  display: inline-block;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  color: white;
+  padding: 8px 18px;
+  border-radius: 50px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin: 5px;
+  box-shadow: 0 4px 15px rgba(37, 117, 252, 0.3);
+  transition: all 0.2s ease;
+  cursor: default;
+}
+
+.keyword-chip:hover {
+  transform: scale(1.05); /* 마우스 올리면 살짝 커짐 */
+  box-shadow: 0 6px 20px rgba(37, 117, 252, 0.5);
+}
+
+/* 새로고침 버튼 스타일 */
+.btn-refresh {
+  border-radius: 50px;
+  padding: 8px 25px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
