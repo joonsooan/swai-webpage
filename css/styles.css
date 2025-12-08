@@ -11264,3 +11264,74 @@ html {
   font-weight: 600;
   transition: all 0.3s;
 }
+
+/* 챗봇 전용 스타일 */
+#chat-window {
+  border: none;
+  border-radius: 20px; /* 둥근 모서리 */
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2); /* 깊은 그림자 */
+  overflow: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  transition: all 0.3s ease;
+}
+
+/* 헤더 그라데이션 */
+.chat-header-gradient {
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  color: white;
+  padding: 15px 20px;
+}
+
+/* 메시지 영역 배경 */
+.chat-body-bg {
+  background-color: #f4f7f6;
+  padding: 15px;
+}
+
+/* 공통 말풍선 스타일 */
+.message-bubble {
+  padding: 10px 16px;
+  border-radius: 18px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  max-width: 85%;
+  word-wrap: break-word;
+  position: relative;
+}
+
+/* AI(봇) 말풍선 - 흰색 */
+.bot-bubble {
+  background-color: #ffffff;
+  color: #444;
+  border-top-left-radius: 4px; /* 말풍선 꼬리 효과 */
+  margin-right: auto; /* 왼쪽 정렬 */
+}
+
+/* 유저 말풍선 - 파란색 그라데이션 */
+.user-bubble {
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  color: white;
+  border-top-right-radius: 4px; /* 말풍선 꼬리 효과 */
+  margin-left: auto; /* 오른쪽 정렬 */
+}
+
+/* 입력창 영역 */
+.chat-input-area {
+  background-color: white;
+  border-top: 1px solid #eee;
+  padding: 10px;
+}
+
+.chat-input-area input {
+  border-radius: 20px;
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+}
+
+.chat-input-area input:focus {
+  background-color: #fff;
+  box-shadow: none;
+  border-color: #2575fc;
+}

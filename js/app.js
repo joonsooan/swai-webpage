@@ -149,18 +149,25 @@ toggleBtn.addEventListener("click", () => (chatWindow.style.display = "flex"));
 closeBtn.addEventListener("click", () => (chatWindow.style.display = "none"));
 
 function addMessage(text, isUser) {
-  const div = document.createElement("div");
-  div.className = isUser
-    ? "d-flex flex-row justify-content-end mb-2"
-    : "d-flex flex-row justify-content-start mb-2";
-  const innerDiv = document.createElement("div");
-  innerDiv.className = isUser ? "p-2 me-2 bg-primary text-white" : "p-2 ms-2";
-  innerDiv.style.borderRadius = "15px";
-  innerDiv.style.backgroundColor = isUser ? "" : "rgba(13, 110, 253, 0.1)";
-  innerDiv.style.maxWidth = "80%";
-  innerDiv.innerText = text;
-  div.appendChild(innerDiv);
-  messagesContainer.appendChild(div);
+  const wrapperDiv = document.createElement("div");
+  wrapperDiv.className = isUser
+    ? "d-flex flex-column align-items-end mb-3" // 유저: 오른쪽 정렬
+    : "d-flex flex-column align-items-start mb-3"; // 봇: 왼쪽 정렬
+
+  const nameLabel = document.createElement("small");
+  nameLabel.className = "text-muted mb-1 " + (isUser ? "me-1" : "ms-1");
+  nameLabel.innerText = isUser ? "You" : "AI Guide";
+
+  const bubbleDiv = document.createElement("div");
+  bubbleDiv.className = isUser
+    ? "message-bubble user-bubble"
+    : "message-bubble bot-bubble";
+  bubbleDiv.innerText = text;
+
+  wrapperDiv.appendChild(nameLabel);
+  wrapperDiv.appendChild(bubbleDiv);
+  messagesContainer.appendChild(wrapperDiv);
+
   messagesContainer.scrollTop = messagesContainer.scrollHeight;
 }
 
