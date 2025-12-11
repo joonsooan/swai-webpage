@@ -113,13 +113,17 @@
       #unity-container {
         width: 90%;
         max-width: 960px;
-        /* 높이는 비율에 따라 자동 조절되도록 설정 */
         aspect-ratio: 16/9;
         background: black;
         box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
         border-radius: 10px;
         overflow: hidden;
-        flex-shrink: 1; /* 화면 작아지면 줄어들도록 */
+        flex-shrink: 1;
+
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        transform: none !important;
       }
 
       #unity-canvas {
